@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Design Iron Cafe with Responsive</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+	
+	<style>
+	body{
+		background-color: #fefefe;
+	}
+	*{
+		box-sizing: border-box;
+		font-family: Trueno;
+	}
+	.menu2{
+		padding: 0;
+	}
+	.menu{
+		margin: 0;
+		padding: 0;
+	}
+	
+	.menu1{
+		width: 100%;
+		height: auto;
+		margin-top: 80px;
+		text-align: left;
+		padding: 0px;
+		font-size: 16px;
+		/*border: 1px solid black;*/
+	}
+	
+	@media (min-width: 480px){
+		.header{
+			padding: 0px;
+			margin: 0px;
+			width: 100%;
+			/*background-color: #333;*/
+		}
+		.header1{
+			padding-right: 20px;
+			font-size: 18px;
+		}
+		.header2{
+			padding-left: 50px;		
+		}
+		.header1:hover{
+			color: #2be6ab !important;
+		}
+		.nav-link{
+			font-size: 15px;
+			color: white !important;
+		}
+		.nav-link:hover{
+			color: #2be6ab !important;
+		}
+		.menu1{
+			padding: 10px;
+		}
+		.section{
+			width: 70%;
+			height: 240px;
+			text-align: center;
+			background-color: #fefefe;
+			/*border: 1px solid #ddd;*/
+			box-shadow: 1px 2px 10px #aaa;
+			border-radius: 4px;
+			margin-top: 40px;
+			margin-left: 70px;
+		}
+		.section:hover{
+			box-shadow: 0px 3px 5px 5px #aaa;
+		}
+		.fim{
+			margin-top: 5px;
+			width: auto;
+			height: auto;
+			cursor: pointer;
+		}
+		.txt{
+			width: 100%;
+			padding: 15px;
+			text-align: left;
+			font-style: normal;
+			font-size: 13px;
+			line-height: 1.5;
+		}
+		
+	}
+	@media (min-width: 576px){
+		.header{
+			padding: 0px;
+			margin: 0px;
+			width: 100%;
+			height: 48px;
+			/*background-color: #333;*/
+		}
+		.header1{
+			padding-left: 30px;
+			font-size: 18px;
+		}
+		.header2{
+			padding-left: 0px;
+			padding-right: 20px;
+		}
+		
+		.header1:hover{
+			color: #2be6ab !important;
+		}
+		.nav-link{
+			font-size: 15px;
+			color: red !important;
+		}
+		.nav-link:hover{
+			color: #2be6ab !important;
+		}
+		.menu1{
+			padding: 0px;
+		}
+		.section{
+			width: 70%;
+			height: 240px;
+			text-align: center;
+			background-color: #fefefe;
+			/*border: 1px solid #ddd;*/
+			box-shadow: 1px 2px 10px #aaa;
+			border-radius: 4px;
+			margin-top: 40px;
+			margin-left: 100px;
+			
+		}
+		.section:hover{
+			box-shadow: 0px 3px 5px 5px #aaa;
+		}
+		.fim{
+			margin-top: 5px;
+			width: auto;
+			height: auto;
+			cursor: pointer;
+		}
+		.txt{
+			width: 100%;
+			padding: 15px;
+			text-align: left;
+			font-style: normal;
+			font-size: 14px;
+			line-height: 1.5;
+		}
+		
+	}
+	@media (min-width: 768px){
+		.header{
+			padding: 0px;
+			margin: 0px;
+			width: 100%;
+			height: 48px;
+			/*background-color: #333;*/
+		}
+		.header1{
+			padding-left: 100px;
+			font-size: 18px;
+		}
+		.header2{
+			padding-left: 0px;
+			padding-right: 30px;
+		}
+		
+		.header1:hover{
+			color: #2be6ab !important;
+		}
+		.nav-link{
+			font-size: 15px;
+			color: white !important;
+		}
+		.nav-link:hover{
+			color: #2be6ab !important;
+		}
+		.section{
+			width: 90%;
+			height: 240px;
+			text-align: center;
+			background-color: #fefefe;
+			/*border: 1px solid #ddd;*/
+			box-shadow: 1px 2px 10px #aaa;
+			border-radius: 4px;
+			margin-top: 40px;
+			margin-left: 10px;
+			
+		}
+		.section:hover{
+			box-shadow: 0px 3px 5px 5px #aaa;
+		}
+		.fim{
+			margin-top: 5px;
+			width: auto;
+			height: auto;
+			cursor: pointer;
+		}
+		.txt{
+			width: 100%;
+			padding: 15px;
+			text-align: left;
+			font-style: normal;
+			font-size: 14px;
+			line-height: 1.5;
+		}
+		
+	}
+	@media (min-width: 992px) {
+		.header{
+			padding: 0px;
+			margin: 0px;
+			width: 100%;
+			height: 48px;
+			/*background-color: #333;*/
+		}
+		.header1{
+			padding-left: 100px;
+			font-size: 18px;
+		}
+		.header2{
+			padding-left: 0px;
+			padding-right: 30px;
+		}
+		
+		.header1:hover{
+			color: #2be6ab !important;
+		}
+		.nav-link{
+			font-size: 15px;
+			color: red !important;
+		}
+		.nav-link:hover{
+			color: #2be6ab !important;
+		}
+		.section{
+			width: 90%;
+			height: 240px;
+			text-align: center;
+			background-color: #fefefe;
+			/*border: 1px solid #ddd;*/
+			box-shadow: 1px 2px 10px #aaa;
+			border-radius: 4px;
+			margin-top: 40px;
+			margin-left: 10px;
+			
+		}
+		.section:hover{
+			box-shadow: 0px 3px 5px 5px #aaa;
+		}
+		.fim{
+			margin-top: 5px;
+			width: auto;
+			height: auto;
+			cursor: pointer;
+		}
+		.txt{
+			width: 100%;
+			padding: 15px;
+			text-align: left;
+			font-style: normal;
+			font-size: 14px;
+			line-height: 1.5;
+		}
+		
+	}
+	@media (min-width: 1200px) {	
+		.header{
+			padding: 0px;
+			margin: 0px;
+			width: 100%;
+			height: 48px;
+			/*background-color: #333;*/
+		}
+		.header1{
+			padding-left: 100px;
+			font-size: 18px;
+		}
+		.header2{
+			padding-left: 0px;
+			padding-right: 30px;
+		}
+		
+		.header1:hover{
+			color: #2be6ab !important;
+		}
+		.nav-link{
+			font-size: 15px;
+			color: white !important;
+		}
+		.nav-link:hover{
+			color: #2be6ab !important;
+		}
+		.menu1{
+			padding: 0px;
+		}
+		.section{
+			width: 80%;
+			height: 240px;
+			text-align: center;
+			background-color: #fefefe;
+			/*border: 1px solid #ddd;*/
+			box-shadow: 1px 2px 10px #aaa;
+			border-radius: 4px;
+			margin-top: 40px;
+		}
+		.section:hover{
+			box-shadow: 0px 3px 5px 5px #aaa;
+		}
+		.fim{
+			margin-top: 5px;
+			width: auto;
+			height: auto;
+			cursor: pointer;
+		}
+		.txt{
+			width: 100%;
+			padding: 15px;
+			text-align: left;
+			font-size: 13px;
+			line-height: 1.8;
+		}
+	}	
+	</style>	
+</head>
+<body>
+	<div class="container">
+		<nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark header">
+		 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+		 
+		 	<a class="navbar-brand header1" href="index.html">IRON CAFE</a>
+		 
+			<div class="collapse navbar-collapse" id="nav-content">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item header2">
+						<a class="nav-link" href="post.html">Postwar</a>
+					</li>
+					<li class="nav-item header2">
+						<a class="nav-link" href="cons.html">Construction</a>
+					</li>
+					<li class="nav-item header2">
+						<a class="nav-link" href="fuel.html">Fuel economy</a>
+					</li>
+					<li class="nav-item header2">
+						<a class="nav-link" href="dyn.html">Dynamics</a>
+					</li>
+				</ul>
+				
+			</div>	
+		</nav>
+	</div>	
+<div class="container">
+	<div class="row">
+		<div class="col-12 col-sm-12 col-md-12 col-lg-12 menu">
+			<div class="menu1">
+				Fuel Engine Photo Gallery
+			</div>
+		</div>	
+		<div class="col-12 col-sm-12 col-md-6 col-lg-4 menu">
+			<div class="section">
+				<img src="images/fuel2.png" alt="no img" class="fim">
+				<blockquote class="txt">
+					Motorcycle fuel economy varies greatly with engine displacement and riding style
+				</blockquote>
+			</div>
+		</div>
+		<div class="col-12 col-sm-12 col-md-6 col-lg-4 menu">
+			<div class="section">
+				<img src="images/fuel31.jpg" alt="no img" class="fim">
+				<blockquote class="txt">
+					Motorcycle fuel economy varies greatly with engine displacement and riding style
+				</blockquote>
+			</div>
+		</div>
+		<div class="col-12 col-sm-12 col-md-6 col-lg-4 menu">
+			<div class="section">
+				<img src="images/fuel22.png" alt="no img" class="fim">
+				<blockquote class="txt">
+					Motorcycle fuel economy varies greatly with engine displacement and riding style
+				</blockquote>
+			</div>
+		</div>
+		<div class="col-12 col-sm-12 col-md-6 col-lg-4 menu">
+			<div class="section">
+				<img src="images/fuel21.jpg" alt="no img" class="fim">
+				<blockquote class="txt">
+					Motorcycle fuel economy varies greatly with engine displacement and riding style
+				</blockquote>
+			</div>
+		</div>
+		<div class="col-12 col-sm-12 col-md-6 col-lg-4 menu">
+			<div class="section">
+				<img src="images/fuel234.jpg" alt="no img" class="fim">
+				<blockquote class="txt">
+					Motorcycle fuel economy varies greatly with engine displacement and riding style
+				</blockquote>
+			</div>
+		</div>
+		<div class="col-12 col-sm-12 col-md-6 col-lg-4 menu">
+			<div class="section">
+				<img src="images/fuel24.jpg" alt="no img" class="fim">
+				<blockquote class="txt">
+					Motorcycle fuel economy varies greatly with engine displacement and riding style
+				</blockquote>
+			</div>
+		</div>
+		
+		<div class="col-12 col-sm-12 col-md-6 col-lg-4 menu">
+			<div class="section">
+				<img src="images/fuel7.png" alt="no img" class="fim">
+				<blockquote class="txt">
+					Motorcycle fuel economy varies greatly with engine displacement and riding style
+				</blockquote>
+			</div>
+		</div>
+		<div class="col-12 col-sm-12 col-md-6 col-lg-4 menu">
+			<div class="section">
+				<img src="images/fuel32.jpg" alt="no img" class="fim">
+				<blockquote class="txt">
+					Motorcycle fuel economy varies greatly with engine displacement and riding style
+				</blockquote>
+			</div>
+		</div>
+		<div class="col-12 col-sm-12 col-md-6 col-lg-4 menu">
+			<div class="section">
+				<img src="images/fuel33.png" alt="no img" class="fim">
+				<blockquote class="txt">
+					Motorcycle fuel economy varies greatly with engine displacement and riding style
+				</blockquote>
+			</div>
+		</div>
+	</div>
+				
+</div>
+
+</body>
+</html>

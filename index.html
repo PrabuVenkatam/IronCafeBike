@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Design Iron Cafe with Responsive</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+	<!--<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/trueno" type="text/css"/>-->
+	<style>
+	body{
+		background-color: #fefefe;
+	}
+	*{
+		box-sizing: border-box;
+		font-family: Trueno;
+	}
+	.menu{
+		margin: 0;
+		padding: 0;
+	}
+	.header-img{
+		width: 100%;
+		height: auto;
+		padding: 50px;
+		text-align: center;
+		background-color: #fefefe;
+		/*border: 1px solid red;*/
+	}
+	.bgim{
+		width: auto;
+		height: auto;
+	}
+	.menu1{
+		width: 100%;
+		height: 50px;
+		text-align: left;
+		padding: 20px;	
+		font-size: 20px;
+		font-weight: bold;
+	}
+	.section1{
+		width: 100%;
+		height: auto;
+		/*border: 1px solid black;*/
+		text-align: left;
+		padding: 20px;	
+	}
+	.para{
+		font-weight: normal; 
+		font-style: normal;
+		font-size: 14px;
+		line-height: 2.6;
+	}
+	@media (min-width: 480px){
+		.header{
+			padding: 0px;
+			margin: 0px;
+			width: 100%;
+			/*background-color: #333;*/
+		}
+		.header1{
+			padding-right: 20px;
+			font-size: 18px;
+		}
+		.header2{
+			padding-left: 50px;		
+		}
+		.header1:hover{
+			color: #2be6ab !important;
+		}
+		.nav-link{
+			font-size: 15px;
+			color: white !important;
+		}
+		.nav-link:hover{
+			color: #2be6ab !important;
+		}
+		.header-img{
+			width: 100%;
+			height: auto;
+			margin-top: 40px;
+			padding: 50px;
+			text-align: center;
+			background-color: #fefefe;
+			/*border: 1px solid black;*/
+		}
+	}
+	@media (min-width: 576px){
+		.header{
+			padding: 0px;
+			margin: 0px;
+			width: 100%;
+			height: 48px;
+			/*background-color: #333;*/
+		}
+		.header1{
+			padding-left: 50px;
+			font-size: 18px;
+		}
+		.header2{
+			padding-left: 0px;
+			padding-right: 30px;
+		}
+		
+		.header1:hover{
+			color: #2be6ab !important;
+		}
+		.nav-link{
+			font-size: 15px;
+			color: red !important;
+		}
+		.nav-link:hover{
+			color: #2be6ab !important;
+		}
+		.header-img{
+			width: 100%;
+			height: auto;
+			margin-top: 50px;
+			padding: 50px;
+			text-align: center;
+			background-color: #fefefe;
+			/*border: 1px solid red;*/
+		}
+	}
+	@media (min-width: 768px){
+		.header{
+			padding: 0px;
+			margin: 0px;
+			width: 100%;
+			height: 48px;
+			/*background-color: #333;*/
+		}
+		.header1{
+			padding-left: 100px;
+			font-size: 18px;
+		}
+		.header2{
+			padding-left: 0px;
+			padding-right: 30px;
+		}
+		
+		.header1:hover{
+			color: #2be6ab !important;
+		}
+		.nav-link{
+			font-size: 15px;
+			color: white !important;
+		}
+		.nav-link:hover{
+			color: #2be6ab !important;
+		}
+		.header-img{
+			width: 100%;
+			height: auto;
+			margin-top: 50px;
+			padding: 50px;
+			text-align: center;
+			background-color: #fefefe;
+			/*border: 1px solid violet;*/
+		}
+	}
+	@media (min-width: 992px) {
+		.header{
+			padding: 0px;
+			margin: 0px;
+			width: 100%;
+			height: 48px;
+			/*background-color: #333;*/
+		}
+		.header1{
+			padding-left: 100px;
+			font-size: 18px;
+		}
+		.header2{
+			padding-left: 0px;
+			padding-right: 30px;
+		}
+		
+		.header1:hover{
+			color: #2be6ab !important;
+		}
+		.nav-link{
+			font-size: 15px;
+			color: red !important;
+		}
+		.nav-link:hover{
+			color: #2be6ab !important;
+		}
+		.header-img{
+			width: 100%;
+			height: auto;
+			margin-top: 50px;
+			padding: 50px;
+			text-align: center;
+			background-color: #fefefe;
+			/*border: 1px solid red;*/
+		}
+	}
+	@media (min-width: 1200px) {	
+		.header{
+			padding: 0px;
+			margin: 0px;
+			width: 100%;
+			height: 48px;
+			/*background-color: #333;*/
+		}
+		.header1{
+			padding-left: 100px;
+			font-size: 18px;
+		}
+		.header2{
+			padding-left: 0px;
+			padding-right: 30px;
+		}
+		
+		.header1:hover{
+			color: #2be6ab !important;
+		}
+		.nav-link{
+			font-size: 15px;
+			color: white !important;
+		}
+		.nav-link:hover{
+			color: #2be6ab !important;
+		}
+		.header-img{
+			width: 100%;
+			height: auto;
+			margin-top: 50px;
+			padding: 50px;
+			text-align: center;
+			background-color: #fefefe;
+			/*border: 1px solid black;*/
+		}	
+		
+	}	
+	</style>	
+</head>
+<body>
+	<div class="container">
+		<nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark header">
+		 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+		 
+		 	<a class="navbar-brand header1" href="index.html">IRON CAFE</a>
+		 
+			<div class="collapse navbar-collapse" id="nav-content">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item header2">
+						<a class="nav-link" href="post.html">Postwar</a>
+					</li>
+					<li class="nav-item header2">
+						<a class="nav-link" href="cons.html">Construction</a>
+					</li>
+					<li class="nav-item header2">
+						<a class="nav-link" href="fuel.html">Fuel economy</a>
+					</li>
+					<li class="nav-item header2">
+						<a class="nav-link" href="dyn.html">Dynamics</a>
+					</li>
+				</ul>
+				
+			</div>	
+		</nav>
+	</div>	
+	<div class="container">
+	<div class="row">
+		<div class="col-12 col-sm-12 col-md-12 col-lg-12 menu">
+			<div class="header-img">
+				<img src="images/bike3.png" alt="no img" class="bgim">
+			</div>	
+		</div>
+		<div class="col-12 col-sm-12 col-md-12 col-lg-12 menu">
+			<div class="menu1">
+				Iron Cafe 
+				
+			</div>
+		</div>
+		<div class="col-12 col-sm-12 col-md-12 col-lg-12 menu">
+			<div class="section1">
+				<blockquote class="para"> A motorcycle, often called a bike, motorbike, or cycle, is a two-[1][2] or three-wheeled[3][4] motor vehicle. Motorcycle design varies greatly to suit
+				a range of different purposes: long distance travel, commuting, cruising, sport including racing, and off-road riding. Motorcycling is riding a motorcycle and related
+				social activity such as joining a motorcycle club and attending motorcycle rallies.
+
+				In 1894, Hildebrand & Wolfmüller became the first series production motorcycle, and the first to be called a motorcycle. In 2014, the three top motorcycle producers
+				globally by volume were Honda, Yamaha (both from Japan), and Hero MotoCorp (India).[5]
+
+				In developing countries, motorcycles are considered utilitarian due to lower prices and greater fuel economy. Of all the motorcycles in the world, 
+				58% are in the Asia-Pacific and Southern and Eastern Asia regions, excluding car-centric Japan.
+
+				In some countries the use of pillions (rear seats) is restricted. The inventors called their invention the Reitwagen ("riding car"). 
+				It was designed as an expedient testbed for their new engine, rather than a true prototype vehicle.
+				
+				</blockquote>
+			</div>
+			
+			<div class="section1">
+				<blockquote class="para">This vehicle was unlike either the safety bicycles or the boneshaker bicycles of the era in that it had zero degrees of steering
+				axis angle and no fork offset, and thus did not use the principles of bicycle and motorcycle dynamics developed nearly 70 years earlier. Instead, it 
+				relied on two outrigger wheels to remain upright while turning.The first commercial design for a self-propelled cycle was a three-wheel design called the Butler Petrol Cycle,
+				conceived of Edward Butler in England in 1884.[11] He exhibited his plans for the vehicle at the Stanley Cycle Show in London in 1884.
+				The vehicle was built by the Merryweather Fire Engine company in Greenwich, in 1888. If a two-wheeled vehicle with steam propulsion is considered a motorcycle,
+				then the first motorcycles built seem to be the French Michaux-Perreaux steam velocipede which patent application was filled in December 1868,[9][10]
+				constructed around the same time as the American Roper steam velocipede, built by Sylvester H. Roper Roxbury, Massachusetts.[9][10] who demonstrated his machine
+				at fairs and circuses in the eastern U.S. in 1867,[7] Roper built about 10 steam cars and cycles from the 1860s until his death in 1896.
+				
+				</blockquote>
+			</div>
+			
+		</div>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Design Iron Cafe with Responsive</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+	<style>
+	body{
+		background-color: #fefefe;
+	}
+	*{
+		box-sizing: border-box;
+		font-family: Trueno;
+		/*font-family: Georgia, "Times New Roman", Times, serif;*/
+	}
+	.menu{
+		margin: 0;
+		padding: 0;
+	}
+	
+	
+	.bgim{
+		width: 220px;
+		height: 164px;
+		border: 1px solid #ddd;
+		border-radius: 5px;
+	}
+	.para1{
+		font-family: 'TruenoRegular'; 
+		font-weight: normal; 
+		font-style: normal;
+		font-size: 14px;
+		line-height: 2.5;
+	}
+	.para{
+		font-weight: normal; 
+		font-style: normal;
+		font-size: 14px;
+		line-height: 2.6;
+	}
+	.menu1{
+		width: 100%;
+		height: auto;
+		margin-top: 80px;
+		text-align: left;
+		padding: 0px;
+		font-size: 18px;
+		font-weight: bold;
+	}
+	.section1{
+		width: 100%;
+		height: auto;
+		margin-top: 10px;
+		/*border: 1px solid black;*/
+		text-align: left;
+		padding: 0px;	
+	}
+	.section2{
+		width: 90%;
+		height: auto;
+		margin-top: 30px;
+		margin-left: 50px;
+		/*border: 1px solid black;*/
+		text-align: center;
+		padding: 0px;	
+	}	
+	.menu2{
+		width: 100%;
+		height: auto;
+		margin-top: 30px;
+		text-align: left;
+		padding: 0px;
+		font-size: 18px;
+		font-weight: bold;
+	}
+	@media (min-width: 480px){
+		.header{
+			padding: 0px;
+			margin: 0px;
+			width: 100%;
+			/*background-color: #333;*/
+		}
+		.header1{
+			padding-right: 20px;
+			font-size: 18px;
+		}
+		.header2{
+			padding-left: 50px;		
+		}
+		.header1:hover{
+			color: #2be6ab !important;
+		}
+		.nav-link{
+			font-size: 15px;
+			color: white !important;
+		}
+		.nav-link:hover{
+			color: #2be6ab !important;
+		}
+		.menu1{
+			padding: 10px;
+		}
+		.section1{
+			padding: 10px;	
+		}
+		.section2{
+			padding: 10px;	
+		}	
+		.menu2{
+			padding: 10px;
+		}
+	}
+	@media (min-width: 576px){
+		.header{
+			padding: 0px;
+			margin: 0px;
+			width: 100%;
+			height: 48px;
+			/*background-color: #333;*/
+		}
+		.header1{
+			padding-left: 30px;
+			font-size: 18px;
+		}
+		.header2{
+			padding-left: 0px;
+			padding-right: 20px;
+		}
+		
+		.header1:hover{
+			color: #2be6ab !important;
+		}
+		.nav-link{
+			font-size: 15px;
+			color: red !important;
+		}
+		.nav-link:hover{
+			color: #2be6ab !important;
+		}
+		.menu1{
+			padding: 0px;
+		}
+		.section1{
+			padding: 0px;	
+		}
+		.section2{
+			padding: 0px;	
+		}	
+		.menu2{
+			padding: 0px;
+		}
+	}
+	@media (min-width: 768px){
+		.header{
+			padding: 0px;
+			margin: 0px;
+			width: 100%;
+			height: 48px;
+			/*background-color: #333;*/
+		}
+		.header1{
+			padding-left: 100px;
+			font-size: 18px;
+		}
+		.header2{
+			padding-left: 0px;
+			padding-right: 30px;
+		}
+		
+		.header1:hover{
+			color: #2be6ab !important;
+		}
+		.nav-link{
+			font-size: 15px;
+			color: white !important;
+		}
+		.nav-link:hover{
+			color: #2be6ab !important;
+		}
+		.menu1{
+			padding: 0px;
+		}
+		.section1{
+			padding: 0px;	
+		}
+		.section2{
+			padding: 0px;	
+		}	
+		.menu2{
+			padding: 0px;
+		}
+	}
+	@media (min-width: 992px) {
+		.header{
+			padding: 0px;
+			margin: 0px;
+			width: 100%;
+			height: 48px;
+			/*background-color: #333;*/
+		}
+		.header1{
+			padding-left: 100px;
+			font-size: 18px;
+		}
+		.header2{
+			padding-left: 0px;
+			padding-right: 30px;
+		}
+		
+		.header1:hover{
+			color: #2be6ab !important;
+		}
+		.nav-link{
+			font-size: 15px;
+			color: red !important;
+		}
+		.nav-link:hover{
+			color: #2be6ab !important;
+		}
+		.menu1{
+			padding: 0px;
+		}
+		.section1{
+			padding: 0px;	
+		}
+		.section2{
+			padding: 0px;	
+		}	
+		.menu2{
+			padding: 0px;
+		}
+	}
+	@media (min-width: 1200px) {	
+		.header{
+			padding: 0px;
+			margin: 0px;
+			width: 100%;
+			height: 48px;
+			/*background-color: #333;*/
+		}
+		.header1{
+			padding-left: 100px;
+			font-size: 18px;
+		}
+		.header2{
+			padding-left: 0px;
+			padding-right: 30px;
+		}
+		
+		.header1:hover{
+			color: #2be6ab !important;
+		}
+		.nav-link{
+			font-size: 15px;
+			color: white !important;
+		}
+		.nav-link:hover{
+			color: #2be6ab !important;
+		}
+		.menu1{
+			padding: 0px;
+		}
+		.section1{
+			padding: 0px;	
+		}
+		.section2{
+			padding: 0px;	
+		}	
+		.menu2{
+			padding: 0px;
+		}
+	}	
+	</style>	
+</head>
+<body>
+	<div class="container">
+		<nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark header">
+		 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+		 
+		 	<a class="navbar-brand header1" href="index.html">IRON CAFE</a>
+		 
+			<div class="collapse navbar-collapse" id="nav-content">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item header2">
+						<a class="nav-link" href="post.html">Postwar</a>
+					</li>
+					<li class="nav-item header2">
+						<a class="nav-link" href="cons.html">Construction</a>
+					</li>
+					<li class="nav-item header2">
+						<a class="nav-link" href="fuel.html">Fuel economy</a>
+					</li>
+					<li class="nav-item header2">
+						<a class="nav-link" href="dyn.html">Dynamics</a>
+					</li>
+				</ul>
+				
+			</div>	
+		</nav>
+	</div>	
+<div class="container">
+	<div class="row">
+		<div class="col-12 col-sm-12 col-md-12 col-lg-12 menu">
+			<div class="menu1">
+				Postwar
+			</div>
+		</div>
+		<div class="col-12 col-sm-12 col-md-9 col-lg-9 menu">
+			<div class="section1">
+				<blockquote class="para">The 1955 Grand Prix motorcycle racing season was the seventh F.I.M. Road Racing World Championship Grand Prix season. 
+				The season consisted of eight Grand Prix races in five classes: 500cc, 350cc, 250cc, 125cc and Sidecars 500cc. It began on 1 May, with Spanish Grand Prix and ended
+				with Nations Grand Prix in Italy on 4 September.
+				By 1920, Harley-Davidson was the largest manufacturer,[26] with their motorcycles being sold by dealers in 67 countries.[27][28]
+				By the late 1920s or early 1930s, DKW in Germany took over as the largest manufacturer. In the 1950s, streamlining began to play an increasing part in the development of 
+				racing motorcycles and the "dustbin fairing" held out the possibility of radical changes to motorcycle design. NSU and Moto Guzzi were in the vanguard of this development,
+				both producing very radical designs well ahead of their time.[32] NSU produced the most advanced design, but after the deaths of four NSU riders in the 1954–1956
+				seasons, they abandoned further development and quit Grand Prix motorcycle racing.[33]
+
+				Moto Guzzi produced competitive race machines, and by 1957 nearly all the Grand Prix races were being won by streamlined machines.[citation needed]
+				The following year, 1958, full enclosure fairings were banned from racing by the FIM in the light of the safety concerns.From the 1960s through the 1990s,
+				small two-stroke motorcycles were popular worldwide, partly as a result of East German MZs Walter Kaaden's engine work in the 1950s.
+				
+				</blockquote>
+			</div>
+		</div>
+		<div class="col-12 col-sm-12 col-md-3 col-lg-3 menu">
+			<div class="section2">	
+				<img src="images/post1.jpg" alt="no img" class="bgim">
+				<p class="para1">NSU Sportmax streamlined</p>
+			</div>
+			
+		</div>
+		
+		<div class="col-12 col-sm-12 col-md-12 col-lg-12 menu">
+			<div class="menu2">
+				MZ RT 125
+			</div>
+		</div>	
+		<div class="col-12 col-sm-12 col-md-9 col-lg-9 menu">
+			<div class="section1">
+				<blockquote class="para">The RT 125 was a German two-stroke motorcycle made by DKW in Zschopau in the 1930s, IFA and MZ in the 1950s and early 1960s, and DKW
+				in Ingolstadt in the 1950s and 1960s. "RT" stands for "Reichstyp" or "National Model".
+				In the 21st century, the motorcycle industry is mainly dominated by the Chinese motorcycle industry and by Japanese motorcycle companies.
+				In addition to the large capacity motorcycles, there is a large market in smaller capacity (less than 300 cc) motorcycles, mostly concentrated in Asian and African
+				countries and produced in China and India. A Japanese example is the 1958 Honda Super Cub, which went on to become the biggest selling vehicle of all time, 
+				with its 60 millionth unit produced in April 2008.[35] Today, this area is dominated by mostly Indian companies with Hero MotoCorp emerging as the world's largest 
+				manufacturer of two wheelers. Its Splendor model has sold more than 8.5 million to date.[36] Other major producers are Bajaj and TVS Motors.
+				
+				</blockquote>
+			</div>
+		</div>
+		<div class="col-12 col-sm-12 col-md-3 col-lg-3 menu">
+			<div class="section2">	
+				<img src="images/post2.jpg" alt="no img" class="bgim">
+				
+					<p class="para1">MZ RT 125</p>
+				</div>
+			
+		</div>	
+		
+	</div>
+</div>
+</body>
+</html>
